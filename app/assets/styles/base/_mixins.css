@@ -15,3 +15,10 @@
         @mixin-content;
     }
 }
+@define-mixin clear_fix{
+    &::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
